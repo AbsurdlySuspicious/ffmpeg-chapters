@@ -17,3 +17,7 @@ Excepts chapter list formatted like "HH:MM:SS;Chapter name" on stdin, one chapte
 
 If no file length specified as argument, last chapter will not have `END=` attribute
 
+## License
+
+CC0. Do with it whatever you want
+
