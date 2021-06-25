@@ -37,7 +37,7 @@ def routine():
         exit(0)
 
     for lraw in sys.stdin:
-        time, name = lraw.rstrip('\r\n').split(';')
+        time, name = lraw.rstrip('\r\n').split(';', 1)
         delta = parse_dur(time)
 
         if last_offset is not None and delta < last_offset:
