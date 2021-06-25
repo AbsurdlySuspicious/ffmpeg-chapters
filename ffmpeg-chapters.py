@@ -23,6 +23,8 @@ def parse_dur(time):
     return delta_s.seconds * 1000
 
 def routine():
+    global last_offset, prev_title
+
     if len(sys.argv) > 2 or any(map(lambda a: a in ('-h', '--help'), sys.argv)):
         print(f'Usage: {sys.argv[0]} [FILE_LENGTH] <chapters')
         print('Expects chapter list formatted like "HH:MM:SS;Chapter name" on stdin, one chapter per line.')
