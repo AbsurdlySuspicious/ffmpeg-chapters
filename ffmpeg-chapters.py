@@ -26,6 +26,7 @@ def routine():
     if len(sys.argv) > 2 or any(map(lambda a: a in ('-h', '--help'), sys.argv)):
         print(f'Usage: {sys.argv[0]} [FILE_LENGTH] <chapters')
         print('Expects chapter list formatted like "HH:MM:SS;Chapter name" on stdin, one chapter per line.')
+        print('Leading zeroes can be omitted.')
         print('e.g. "00:00:00;Chapter 1 ')
         print('      00:45:13;Chapter 2 ')
         print('      01:03:00;Chapter 3"')
